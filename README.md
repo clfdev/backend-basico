@@ -1,10 +1,8 @@
-# Sistema de Atividades Avaliativas - Backend
-
-Este repositório contém o backend do Sistema de Atividades Avaliativas, uma aplicação para gerenciamento de questionários e provas online para instituições de ensino. O sistema permite a criação, aplicação e correção de avaliações com diferentes níveis de acesso para administradores, professores e alunos.
+# Backend Básico
+Este repositório contém o backend básico de login de três tipos de usuários: alunos, professores e administradores.
 
 ## 📋 Índice
 
-- [Visão Geral](#visão-geral)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Requisitos](#requisitos)
@@ -15,16 +13,6 @@ Este repositório contém o backend do Sistema de Atividades Avaliativas, uma ap
 - [Endpoints](#endpoints)
 - [Próximos Passos](#próximos-passos)
 - [Licença](#licença)
-
-## 🌐 Visão Geral
-
-O backend fornece uma API RESTful para o Sistema de Atividades Avaliativas, gerenciando dados de usuários, disciplinas, questionários, questões e respostas. O sistema possui três tipos de usuários:
-
-- **Administradores**: Acesso total ao sistema
-- **Professores**: Gerenciam questionários e provas de suas disciplinas
-- **Alunos**: Respondem questionários e provas disponíveis
-
-O sistema utiliza autenticação JWT com tempos de expiração diferentes por tipo de usuário e garante que todas as operações sejam realizadas de acordo com as permissões apropriadas.
 
 ## 📁 Estrutura do Projeto
 
