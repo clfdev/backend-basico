@@ -1,6 +1,6 @@
-# Sistema de Atividades Avaliativas - Backend
+# Backend Básico
 
-Este repositório contém o backend do Sistema de Atividades Avaliativas, uma aplicação para gerenciamento de questionários e provas online para instituições de ensino. O sistema permite a criação, aplicação e correção de avaliações com diferentes níveis de acesso para administradores, professores e alunos.
+Este repositório contém o backend básico de login de três tipos de usuários: alunos, professores e administradores.
 
 ## 📋 Índice
 
