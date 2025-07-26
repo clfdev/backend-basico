@@ -13,7 +13,8 @@ O Node.js puro não tem cors embutido.
 const getAllowedOrigins = () => {
   const devOrigins = [
     'http://localhost:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
+    'http://127.0.0.1:5500'
   ];
   if (process.env.NODE_ENV === 'production') {
     return [process.env.FRONTEND_URL].filter(Boolean);

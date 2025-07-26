@@ -13,11 +13,14 @@ const login = async (req, res) => {
   try {
     const { email, senha, tipo } = req.body;
     
-    // Para alunos, senha não é obrigatória
-    if (!email || !tipo || (tipo !== 'aluno' && !senha)) {
-      return res.status(400).json({ 
-         error: tipo === 'aluno' ? 'Email e tipo são obrigatórios' : 'Email, senha e tipo são obrigatórios' 
-     });
+    // Validação mais flexível
+    if (!email || !tipo) {
+      return res.status(400).json({ error: 'Email e tipo são obrigatórios' });
+    }
+    
+    // Para admin e professor, senha é obrigatória
+    if ((tipo === 'admin' || tipo === 'professor') && !senha) {
+      return res.status(400).json({ error: 'Senha é obrigatória para administradores e professores' });
     }
     
     let user = null;
